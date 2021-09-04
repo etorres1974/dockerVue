@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import anime from 'animejs';
 export default {
   name: "Calculator",
   data() {
@@ -56,24 +57,24 @@ export default {
       }
     },
     animateNumber(number) {
-      /*
+      
       let tl = anime.timeline({
         targets: `#${number}`,
         duration: 250,
         easing: "easeInOutCubic",
       });
       tl.add({ backgroundColor: "#c1e3ff" });
-      tl.add({ backgroundColor: "#f4faff" }); */
+      tl.add({ backgroundColor: "#f4faff" }); 
     },
     animateOperator(operator) {
-      /*
+      
       let tl = anime.timeline({
         targets: `#${operator}`,
         duration: 250,
         easing: "easeInOutCubic",
       });
       tl.add({ backgroundColor: "#a6daff" });
-      tl.add({ backgroundColor: "#d9efff" }); */
+      tl.add({ backgroundColor: "#d9efff" }); 
     },
     clear() {
       this.animateOperator("clear");
